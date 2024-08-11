@@ -1,6 +1,7 @@
 
 
-const StepOne = () => {
+// eslint-disable-next-line react/prop-types
+const StepOne = ({handler}) => {
     return (
         <section>
             <h1>Personal Info</h1>
@@ -12,7 +13,9 @@ const StepOne = () => {
                 <input type="email" name="email" id="" />
                 <label htmlFor="phone">Phone Number</label>
                 <input type="number" name="phone" id="" />
-                <button type="submit">Next step</button>
+                <button onClick={(e) => {e.preventDefault();
+                    handler("two");
+                }} type="submit">Next step</button>
                 </form>            
         </section>
     );  
