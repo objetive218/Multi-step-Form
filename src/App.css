@@ -1,42 +1,121 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@font-face {
+    font-family: Ubuntu;
+    src: url(./assets/fonts/Ubuntu-Bold.ttf);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+body{
+    background-color: hsl(229, 24%, 87%);
+    font-family: ubuntu;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+ul{
+    list-style: none;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/*principal section*/
+.principal_box{
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    height: 70vh;
+    background-color: hsl(231, 100%, 99%);
+    position: absolute;
+    right: 20%;
+    top: 15%;
+    padding: 10px;
+    border-radius: 20px;
 }
 
-.card {
-  padding: 2em;
+/*navBar*/
+.navBar{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    background-image: url(./assets/images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navBar ul > li{
+    display: flex;
+    flex: 1 100%;
+    flex-wrap: nowrap;
+    gap: 20px;
+    flex-direction: row;
+    padding-bottom: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+.navBar ul>li > span{
+    width: 35px;
+    align-self: center;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+}
+.navBar ul>li> h5{
+    
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-self: center;
+    justify-self: flex-end;
+    color: white;
+}
+
+
+
+
+/*stepOne component*/
+.stepOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-self: center;
+    padding: 20px 80px;
+    text-wrap: wrap;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+}
+.stepOne h1{
+    font-size: 35px;
+}
+.stepOne p{
+   padding-bottom: 25px;
+   font-size: 17px;
+   letter-spacing: 1px;
+   color: hsl(231, 11%, 63%);
+}
+.stepOne form{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 100%;
+    height: 80%;
+    gap: 10px;
+    position: relative;
+    padding-top: 30px;
+}
+.stepOne form input{
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 10px;
+}
+.stepOne form button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: hsl(213, 96%, 18%);
+    color: white;
+}
+.active{
+    color: hsl(231, 11%, 63%) !important;
+}
+.active_back{
+    background-color: hsl(231, 11%, 63%) !important;
+    color: hsl(213, 96%, 18%) !important;
 }
