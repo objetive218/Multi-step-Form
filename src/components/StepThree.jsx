@@ -25,7 +25,7 @@ const StepThree = ({handler}) => {
             </div>
                 <button onClick={(e) => {e.preventDefault();
                     handler('two');
-                }} type="submit">Go Back</button>
+                }} >Go Back</button>
                 <button onClick={(e) => {e.preventDefault();
                     handler('four');
                 }} type="submit">Next step</button>

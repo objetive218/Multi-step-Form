@@ -1,27 +1,25 @@
+import '../App.css'
 
-const Navbar = () => {
+// eslint-disable-next-line react/prop-types
+const Navbar = ({select}) => {
     return (
-        <nav>
+        <nav className='navBar'>
             <ul>
                 <li>
-                    <span>1</span>
-                    <h6>STEP 1</h6>
-                    <h2>YOUR INFO</h2>
+                    <span className={select === "one" ? 'active_back' : ""}>1</span>
+                    <h5><span className={select === "one" ? 'active' : ""}>STEP 1</span> <br /> YOUR INFO</h5>
                 </li>
                 <li>
-                    <span>2</span>
-                    <h6>STEP 2</h6>
-                    <h2>SELECT PLAN</h2>
+                    <span className={select === "stepTwo" ? 'active_back' : ""}>2</span>
+                    <h5><span className={select === "stepTwo"? 'active': ""}>STEP 2</span><br /> SELECT PLAN</h5>
                 </li>
                 <li>
-                    <span>3</span>
-                    <h6>STEP 3</h6>
-                    <h2>ADD-ONS</h2>
+                    <span className={select === "stepThree" ? 'active_back' : ""}>3</span>
+                    <h5><span className={select === "stepThree" ? 'active': ""}>STEP 3</span><br /> ADD-ONS</h5>
                 </li>
                 <li>
-                    <span>4</span>
-                    <h6>STEP 4</h6>
-                    <h2>SUMMARY</h2>
+                    <span className={select === "stepFour" ? 'active_back' : ""}>4</span>
+                    <h5><span className={select === "stepFour" ? 'active': ""}>STEP 4</span><br /> SUMMARY</h5>
                 </li>
             </ul>
         </nav>

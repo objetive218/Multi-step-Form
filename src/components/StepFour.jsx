@@ -6,29 +6,31 @@ const StepFour = ({handler}) => {
             <p>Double-check everything looks OK before confirming.</p>
             <form action="#">
             <div>
-                <input type="checkbox" name="" id="online" />
-                <h5>Online service</h5>
-                <p>Access to multiplayer games</p>
+                <h5>{`Arcade(${"duration"})`}</h5>
+                <a href="">Change</a>
+                <p>{ `$9/${"duracion"}`}</p>
+            </div>
+            <div>
+                <h5>{`Online service(${"duration"})`}</h5>
+                <a href="">Change</a>
                 <p>{ `$1/${"duracion"}`}</p>
             </div>
             <div>
-                <input type="checkbox" name="" id="storage" />
-                <h5>Larger storage</h5>
-                <p>Extra 1TB of cloud save</p>
+                <h5>{`Larger storage(${"duration"})`}</h5>
+                <a href="">Change</a>
                 <p>{ `$2/${"duracion"}`}</p>
             </div>
             <div>
-                <input type="checkbox" name="" id="profile" />
-                <h5>Customizable Profile</h5>
-                <p>Custom theme on your profile</p>
-                <p>{ `$2/${"duracion"}`}</p>
+                <h5>{`Total (per${"duration"})`}</h5>
+                <a href="">Change</a>
+                <p>{ `$12/${"duracion"}`}</p>
             </div>
                 <button onClick={(e) => {e.preventDefault();
                     handler('three');
-                }} type="submit">Go Back</button>
+                }} >Go Back</button>
                 <button onClick={(e) => {e.preventDefault();
-                    handler('finish');
-                }} type="submit">Next step</button>
+                    handler('Thank');
+                }} type="submit">Finish</button>
                 </form>            
         </section>
     );
