@@ -1,4 +1,4 @@
-import { useReducer } from 'react'
+import { useReducer, useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import StepOne from './components/StepOne'
@@ -8,7 +8,8 @@ import StepFour from './components/StepFour'
 import ThankYou from './components/ThankYou'
 
 function App() {
- 
+  // eslint-disable-next-line no-unused-vars
+  const [personalInfo, setPersonalInfo] = useState({});
   function stepReducer(state, action) {
     switch(action.type){
       case 'one':{
@@ -49,7 +50,7 @@ function App() {
     <>
     <section className='principal_box'>
       <Navbar select={step.selectStep}/>
-      {step.selectStep === "one"  && <StepOne handler={handleButtonNext}/> }
+      {step.selectStep === "one"  && <StepOne handler={handleButtonNext} setInfo={setPersonalInfo}/> }
       {step.selectStep === "stepTwo" && <StepTwo handler={handleButtonNext}/> }
       {step.selectStep === "stepThree" && <StepThree handler={handleButtonNext}/> }
       {step.selectStep === "stepFour" && <StepFour handler={handleButtonNext}/>  }
