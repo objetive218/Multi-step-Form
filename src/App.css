@@ -80,6 +80,7 @@ ul{
 }
 .stepOne h1{
     font-size: 35px;
+    color: hsl(213, 96%, 18%);
 }
 .stepOne p{
    padding-bottom: 25px;
@@ -101,6 +102,10 @@ ul{
     margin-bottom: 15px;
     padding: 8px;
     border-radius: 10px;
+    color: hsl(213, 96%, 18%);
+}
+.stepOne form label{
+    color: hsl(213, 96%, 18%);
 }
 .stepOne form button{
     position: absolute;
