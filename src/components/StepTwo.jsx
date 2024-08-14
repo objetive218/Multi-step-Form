@@ -22,16 +22,16 @@ const StepTwo = ({handler, setInfo, info }) => {
         let data ="";
         switch (selectBox) {
             case "arcade":
-                data = current ? "$9/mo": "$108/yr";
-                setInfo({...info,plan: data})
+                data = current ? 9: 108;
+                setInfo({...info,planName: "arcade",plan: data, duration: current? "mo": "yr"})
                 break;
             case "advanced":
-                data = current ? "$12/mo": "$144/yr";
-                setInfo({...info,plan: data})
+                data = current ? 12: 144;
+                setInfo({...info,planName: "advanced",plan: data, duration: current? "mo": "yr"})
                 break;
             case "pro":
-                data = current ? "$15/mo": "$180/yr";
-                setInfo({...info,plan: data})
+                data = current ? 15: 180;
+                setInfo({...info,planName: "pro",plan: data, duration: current? "mo": "yr"})
                 break;
         }
     }
