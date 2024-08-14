@@ -19,8 +19,8 @@ const Navbar = ({select}) => {
                     <h5><span className={select === "stepThree" ? 'active': ""}>STEP 3</span><br /> ADD-ONS</h5>
                 </li>
                 <li>
-                    <span className={select === "stepFour" ? 'active_back' : ""}>4</span>
-                    <h5><span className={select === "stepFour" ? 'active': ""}>STEP 4</span><br /> SUMMARY</h5>
+                    <span className={select === "stepFour" || select === "ThankYou" ? 'active_back' : ""}>4</span>
+                    <h5><span className={select === "stepFour" || select === "ThankYou" ? 'active': ""}>STEP 4</span><br /> SUMMARY</h5>
                 </li>
             </ul>
         </nav>
