@@ -46,12 +46,13 @@ function App() {
 
 
   const [step, dispatch] = useReducer(stepReducer, {selectStep : "one"})
+  console.log(personalInfo)
   return (
     <>
     <section className='principal_box'>
       <Navbar select={step.selectStep}/>
       {step.selectStep === "one"  && <StepOne handler={handleButtonNext} setInfo={setPersonalInfo}/> }
-      {step.selectStep === "stepTwo" && <StepTwo handler={handleButtonNext}/> }
+      {step.selectStep === "stepTwo" && <StepTwo handler={handleButtonNext} setInfo={setPersonalInfo} info={personalInfo}/> }
       {step.selectStep === "stepThree" && <StepThree handler={handleButtonNext}/> }
       {step.selectStep === "stepFour" && <StepFour handler={handleButtonNext}/>  }
       {step.selectStep === "ThankYou" && <ThankYou /> }
