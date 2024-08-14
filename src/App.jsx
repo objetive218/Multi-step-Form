@@ -46,7 +46,6 @@ function App() {
 
 
   const [step, dispatch] = useReducer(stepReducer, {selectStep : "one"})
-  console.log(personalInfo)
   return (
     <>
     <section className='principal_box'>

@@ -1,12 +1,11 @@
-import { useState } from "react";
+import { useMemo } from "react";
 
 // eslint-disable-next-line react/prop-types
 const StepFour = ({handler, info}) => {
-    const [allInfo , setAllInfo] = useState(info);
+    const allInfo = useMemo(() =>info ,[info])
     const billingDuration = allInfo.duration === "mo"? "Monthly": "Yearly";
     const billingDurationNormal = allInfo.duration === "mo"? "Month": "Year";
     const total = allInfo.plan + allInfo.onlineBilling+ allInfo.storageBilling + allInfo.profileBilling;
-    console.log(total)
     return (
         <section className="stepFour">
             <h1>Finishing up</h1>
