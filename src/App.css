@@ -185,16 +185,20 @@ ul {
     padding: 20px;
     color: hsl(213, 96%, 18%);
 }
-.select_box{
+
+.select_box {
     border: solid 1px hsl(213, 96%, 18%) !important;
 }
-.stepTwo form article>span img{
+
+.stepTwo form article>span img {
     width: 50px;
     align-self: flex-start;
 }
-.stepTwo form article>span p{
+
+.stepTwo form article>span p {
     color: hsl(231, 11%, 63%);
 }
+
 /*duration selector*/
 .stepTwo form div {
     display: flex;
@@ -205,10 +209,12 @@ ul {
     background-color: hsl(229, 24%, 87%);
     border-radius: 10px;
 }
+
 .stepTwo form div h5 {
     color: hsl(213, 96%, 18%);
 }
-.stepTwo form div span{
+
+.stepTwo form div span {
     width: 34px;
     height: 18px;
     background-color: hsl(213, 96%, 18%);
@@ -216,7 +222,8 @@ ul {
     position: relative;
     cursor: pointer;
 }
-.stepTwo form div span::before{
+
+.stepTwo form div span::before {
     content: "";
     width: 13px;
     height: 13px;
@@ -226,18 +233,14 @@ ul {
     right: 3px;
     background-color: white;
 }
-.active_current_btn{
+
+.active_current_btn {
     left: 3px;
 }
-.active_current_btn::before{
+
+.active_current_btn::before {
     left: 3px;
 }
-
-
-
-
-
-
 
 
 
@@ -266,4 +269,219 @@ ul {
     background-color: hsl(213, 96%, 18%);
     color: white;
     cursor: pointer;
+}
+
+/*stepThree component*/
+.stepThree {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-self: center;
+    padding: 20px 40px;
+    text-wrap: wrap;
+    text-align: center;
+    font-size: 16px;
+    width: 40vw;
+    height: calc(70vh - 10px);
+}
+
+.stepThree h1 {
+    font-size: 35px;
+    color: hsl(213, 96%, 18%);
+}
+
+.stepThree>p {
+    padding-bottom: 25px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: hsl(231, 11%, 63%);
+}
+
+.stepThree form {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 100%;
+    height: 80%;
+    gap: 10px;
+    position: relative;
+    padding-top: 30px;
+}
+
+.stepThree form>div {
+    width: 100%;
+    height: 11vh;
+    border: solid 1px hsl(229, 24%, 87%);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.stepThree form>div input {
+    flex: 1;
+    border: solid 1px hsl(231, 11%, 63%);
+    color: hsl(243, 100%, 62%) !important;
+    background-color: hsl(243, 100%, 62%) !important;
+}
+
+.box_addOns {
+    border: solid 1px hsl(243, 100%, 62%) !important;
+}
+
+.stepThree form>div h5 {
+    flex: 4;
+    color: hsl(231, 11%, 63%);
+}
+
+.stepThree form>div h5 span {
+    color: hsl(213, 96%, 18%);
+}
+
+.stepThree form>div p {
+    color: hsl(243, 100%, 62%);
+    flex: 1;
+}
+
+/*buttons*/
+.stepThree form .btn_next {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    bottom: 30px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: hsl(213, 96%, 18%);
+    color: white;
+    cursor: pointer;
+}
+
+.stepThree form .btn_back {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    bottom: 30px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: hsl(213, 96%, 18%);
+    color: white;
+    cursor: pointer;
+}
+
+/*stepFour component*/
+.stepFour {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-self: center;
+    padding: 20px 40px;
+    text-wrap: wrap;
+    text-align: center;
+    font-size: 16px;
+    width: 40vw;
+    height: calc(70vh - 10px);
+}
+
+.stepFour h1 {
+    font-size: 35px;
+    color: hsl(213, 96%, 18%);
+}
+
+.stepFour>p {
+    padding-bottom: 25px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: hsl(231, 11%, 63%);
+}
+
+.stepFour.form {
+    display: flex;
+}
+
+.stepFour form>div {
+    width: 35vw;
+    height: 11vh;
+    border: solid 1px hsl(229, 24%, 87%);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    background-color: hsl(217, 100%, 97%);
+}
+
+.stepFour form>div h5 {
+    flex: 2;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.stepFour form>div p {
+    flex: 1;
+}
+
+
+/*buttons*/
+.stepFour form .btn_finish {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    bottom: 30px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: hsl(213, 96%, 18%);
+    color: white;
+    cursor: pointer;
+}
+
+.stepFour form .btn_back {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    bottom: 30px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: hsl(213, 96%, 18%);
+    color: white;
+    cursor: pointer;
+}
+
+/*thankyou component*/
+.thankYou {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    padding: 20px 40px;
+    text-wrap: wrap;
+    text-align: center;
+    font-size: 16px;
+    width: 40vw;
+    height: calc(70vh - 10px);
+    gap: 10px;
+}
+
+.thankYou h1 {
+    font-size: 35px;
+    color: hsl(213, 96%, 18%);
+}
+
+.thankYou p {
+    width: 70%;
+    line-height: 25px;
+    color: hsl(231, 11%, 63%);
+    text-align: center;
 }

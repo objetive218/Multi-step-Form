@@ -53,8 +53,8 @@ function App() {
       <Navbar select={step.selectStep}/>
       {step.selectStep === "one"  && <StepOne handler={handleButtonNext} setInfo={setPersonalInfo}/> }
       {step.selectStep === "stepTwo" && <StepTwo handler={handleButtonNext} setInfo={setPersonalInfo} info={personalInfo}/> }
-      {step.selectStep === "stepThree" && <StepThree handler={handleButtonNext}/> }
-      {step.selectStep === "stepFour" && <StepFour handler={handleButtonNext}/>  }
+      {step.selectStep === "stepThree" && <StepThree handler={handleButtonNext} setInfo={setPersonalInfo} info={personalInfo}/> }
+      {step.selectStep === "stepFour" && <StepFour handler={handleButtonNext}  info={personalInfo}/>  }
       {step.selectStep === "ThankYou" && <ThankYou /> }
     </section>
     </>
