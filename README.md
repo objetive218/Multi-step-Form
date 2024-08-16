@@ -13,4 +13,5 @@ multi-step form developed in React
 + A field has been missed
 + The email address is not formatted correctly
 + A step is submitted, but no selection has been made
-
+  
+deploy url: https://form-multistep-react.netlify.app
