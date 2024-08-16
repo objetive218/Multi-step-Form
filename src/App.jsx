@@ -8,7 +8,6 @@ import StepFour from './components/StepFour'
 import ThankYou from './components/ThankYou'
 
 function App() {
-  // eslint-disable-next-line no-unused-vars
   const [personalInfo, setPersonalInfo] = useState({});
   function stepReducer(state, action) {
     switch(action.type){

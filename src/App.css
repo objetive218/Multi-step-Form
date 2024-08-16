@@ -618,7 +618,6 @@ ul {
 }
 
 @media (max-width: 376px) {
-    body {}
 
     /*principal section*/
     .principal_box {
@@ -657,6 +656,625 @@ ul {
     .navBar .mobile {
         display: flex;
         width: 375px;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+        padding: 0px;
+        object-fit: cover;
+        border-radius: 0px;
+    }
+
+    .navBar ul>li>h5 {
+        display: none;
+    }
+
+    /*stepOne component*/
+    .stepOne {
+        position: relative;
+        bottom: 180px;
+        right: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        justify-self: center;
+        padding: 10px 30px;
+        text-wrap: wrap;
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .stepOne p {
+        padding-bottom: 0px;
+        letter-spacing: 0;
+        text-align: start;
+        font-size: 16px;
+    }
+
+    .stepOne form button {
+        bottom: -330px;
+        right: -30px;
+    }
+
+    /*stepTwo component*/
+    .stepTwo {
+        position: relative;
+        bottom: 180px;
+        right: 0;
+        width: 100%;
+        height: auto;
+        background-color: white;
+    }
+
+    .stepTwo h1 {
+        text-align: start;
+        font-size: 25px;
+    }
+
+    .stepTwo p {
+        letter-spacing: 0;
+        text-align: start;
+        font-size: 16px;
+        font-family: ubuntu_regular;
+    }
+
+    .stepTwo form article {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .stepTwo form article>span {
+        width: 70vw;
+        height: 9vh;
+        display: grid;
+        grid-template: 1fr 1fr 1fr/ 1fr 3fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stepTwo form article>span img {
+        width: 35px;
+        height: 35px;
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .stepTwo form article>span h4 {
+        grid-column: 2/2;
+        grid-row: 1/2;
+        justify-self: left;
+    }
+
+    .stepTwo form article>span p {
+        padding: 0;
+        grid-column: 2/2;
+        grid-row: 2/2;
+    }
+
+    .stepTwo form article>span h6 {
+        grid-column: 2/2;
+        grid-row: 3/3;
+        justify-self: left;
+    }
+
+    /*duration selector*/
+    .stepTwo form div {
+        width: 260px;
+    }
+
+    /*buttons*/
+    .stepTwo form .btn_next {
+        bottom: -230px;
+        right: 0px;
+    }
+
+    .stepTwo form .btn_back {
+        bottom: -230px;
+        left: 0;
+    }
+
+    /*stepThree component*/
+    .stepThree {
+        position: relative;
+        bottom: 180px;
+        right: 0;
+        width: 100%;
+        height: auto;
+        background-color: white;
+    }
+
+    .stepThree h1 {
+        text-align: start;
+        font-size: 25px;
+        position: relative;
+        right: 15px;
+    }
+
+    .stepThree p {
+        letter-spacing: 0;
+        text-align: start;
+        font-size: 14px;
+        font-family: ubuntu_regular;
+        position: relative;
+        right: 15px;
+    }
+
+
+
+    .stepThree form {
+        padding-top: 0px;
+        width: 280px;
+        position: relative;
+        right: 15px;
+    }
+
+
+    .stepThree form>div {
+        width: 280px;
+        padding: 2px;
+        margin-right: 25px;
+    }
+
+    .stepThree form>div h5 span {
+        font-size: 14px;
+    }
+
+    .stepThree form>div h5 {
+        font-size: 12px;
+        font-family: ubuntu_regular;
+    }
+
+    .stepThree form>div p {
+        font-size: 14px;
+    }
+
+    /*buttons*/
+    .stepThree form .btn_next {
+        bottom: -230px;
+        right: -20px;
+    }
+
+    .stepThree form .btn_back {
+        bottom: -230px;
+        left: -40px;
+    }
+
+    /*stepFour component*/
+    .stepFour {
+        position: relative;
+        bottom: 180px;
+        right: 0;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .stepFour h1 {
+        text-align: start;
+        font-size: 25px;
+        position: relative;
+        right: 15px;
+    }
+
+    .stepFour p {
+        letter-spacing: 0;
+        text-align: start;
+        font-size: 15px;
+        font-family: ubuntu_regular;
+        position: relative;
+        right: 15px;
+    }
+
+    .stepFour form {
+        padding-top: 0px;
+        width: 280px;
+        position: relative;
+        right: 15px;
+
+    }
+
+    .stepFour form>div {
+        width: 280px;
+
+    }
+
+    .stepFour form>section {
+        width: 280px;
+        height: 15vh;
+        font-family: ubuntu_regular;
+    }
+
+    /*buttons*/
+    .stepFour form .btn_finish {
+        bottom: -280px;
+        right: -20px;
+    }
+
+    .stepFour form .btn_back {
+        bottom: -280px;
+        left: -30px;
+    }
+
+    /*thankyou component*/
+    .thankYou {
+        position: relative;
+        bottom: 180px;
+        right: 0;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .thankYou img {
+        width: 50px;
+    }
+
+    .thankYou h1 {
+        font-size: 25px;
+    }
+
+    .thankYou p {
+        font-family: ubuntu_regular;
+        line-height: 20px;
+        width: 100%;
+        letter-spacing: 0;
+        padding-bottom: 50px;
+    }
+}
+
+
+@media (min-width: 390px) and (max-width: 411px) {
+    .principal_box {
+        flex-direction: column;
+        width: 90vw;
+        height: 50vh;
+        top: 200;
+        right: 20px;
+        z-index: 10;
+        background-color: transparent;
+    }
+
+    /*navBar*/
+    .navBar {
+        position: relative;
+        bottom: 139px;
+        right: 29px;
+        background-color: aqua;
+        width: 390px;
+        height: 300px;
+        z-index: -3;
+    }
+
+    .navBar ul {
+        padding-top: 10px;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+    }
+
+    .navBar .desktop {
+        display: none;
+    }
+
+    .navBar .mobile {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+        padding: 0px;
+        object-fit: cover;
+        border-radius: 0px;
+    }
+
+    .navBar ul>li>h5 {
+        display: none;
+    }
+
+    /*stepOne component*/
+    .stepOne {
+        position: relative;
+        bottom: 180px;
+        right: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        justify-self: center;
+        padding: 10px 30px;
+        text-wrap: wrap;
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .stepOne p {
+        padding-bottom: 0px;
+        letter-spacing: 0;
+        text-align: start;
+        font-size: 16px;
+    }
+
+    .stepOne form button {
+        bottom: -330px;
+        right: -30px;
+    }
+
+    /*stepTwo component*/
+    .stepTwo {
+        position: relative;
+        bottom: 180px;
+        right: 0;
+        width: 100%;
+        height: auto;
+        background-color: white;
+    }
+
+    .stepTwo h1 {
+        text-align: start;
+        font-size: 25px;
+    }
+
+    .stepTwo p {
+        letter-spacing: 0;
+        text-align: start;
+        font-size: 16px;
+        font-family: ubuntu_regular;
+    }
+
+    .stepTwo form article {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .stepTwo form article>span {
+        width: 70vw;
+        height: 9vh;
+        display: grid;
+        grid-template: 1fr 1fr 1fr/ 1fr 3fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stepTwo form article>span img {
+        width: 35px;
+        height: 35px;
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .stepTwo form article>span h4 {
+        grid-column: 2/2;
+        grid-row: 1/2;
+        justify-self: left;
+    }
+
+    .stepTwo form article>span p {
+        padding: 0;
+        grid-column: 2/2;
+        grid-row: 2/2;
+    }
+
+    .stepTwo form article>span h6 {
+        grid-column: 2/2;
+        grid-row: 3/3;
+        justify-self: left;
+    }
+
+    /*duration selector*/
+    .stepTwo form div {
+        width: 260px;
+    }
+
+    /*buttons*/
+    .stepTwo form .btn_next {
+        bottom: -230px;
+        right: 0px;
+    }
+
+    .stepTwo form .btn_back {
+        bottom: -230px;
+        left: 0;
+    }
+
+    /*stepThree component*/
+    .stepThree {
+        position: relative;
+        bottom: 180px;
+        right: 0;
+        width: 100%;
+        height: auto;
+        background-color: white;
+    }
+
+    .stepThree h1 {
+        text-align: start;
+        font-size: 25px;
+        position: relative;
+        right: 15px;
+    }
+
+    .stepThree p {
+        letter-spacing: 0;
+        text-align: start;
+        font-size: 14px;
+        font-family: ubuntu_regular;
+        position: relative;
+        right: 15px;
+    }
+
+
+
+    .stepThree form {
+        padding-top: 0px;
+        width: 280px;
+        position: relative;
+        right: 15px;
+    }
+
+
+    .stepThree form>div {
+        width: 280px;
+        padding: 2px;
+        margin-right: 25px;
+    }
+
+    .stepThree form>div h5 span {
+        font-size: 14px;
+    }
+
+    .stepThree form>div h5 {
+        font-size: 12px;
+        font-family: ubuntu_regular;
+    }
+
+    .stepThree form>div p {
+        font-size: 14px;
+    }
+
+    /*buttons*/
+    .stepThree form .btn_next {
+        bottom: -230px;
+        right: -20px;
+    }
+
+    .stepThree form .btn_back {
+        bottom: -230px;
+        left: -40px;
+    }
+
+    /*stepFour component*/
+    .stepFour {
+        position: relative;
+        bottom: 180px;
+        right: 0;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .stepFour h1 {
+        text-align: start;
+        font-size: 25px;
+        position: relative;
+        right: 15px;
+    }
+
+    .stepFour p {
+        letter-spacing: 0;
+        text-align: start;
+        font-size: 15px;
+        font-family: ubuntu_regular;
+        position: relative;
+        right: 15px;
+    }
+
+    .stepFour form {
+        padding-top: 0px;
+        width: 280px;
+        position: relative;
+        right: 15px;
+
+    }
+
+    .stepFour form>div {
+        width: 280px;
+
+    }
+
+    .stepFour form>section {
+        width: 280px;
+        height: 15vh;
+        font-family: ubuntu_regular;
+    }
+
+    /*buttons*/
+    .stepFour form .btn_finish {
+        bottom: -280px;
+        right: -20px;
+    }
+
+    .stepFour form .btn_back {
+        bottom: -280px;
+        left: -30px;
+    }
+
+    /*thankyou component*/
+    .thankYou {
+        position: relative;
+        bottom: 180px;
+        right: 0;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .thankYou img {
+        width: 50px;
+    }
+
+    .thankYou h1 {
+        font-size: 25px;
+    }
+
+    .thankYou p {
+        font-family: ubuntu_regular;
+        line-height: 20px;
+        width: 100%;
+        letter-spacing: 0;
+        padding-bottom: 50px;
+    }
+}
+
+@media (min-width: 412px) and (max-width: 450px) {
+    .principal_box {
+        flex-direction: column;
+        width: 90vw;
+        height: 50vh;
+        top: 200;
+        right: 20px;
+        z-index: 10;
+        background-color: transparent;
+    }
+
+    /*navBar*/
+    .navBar {
+        position: relative;
+        bottom: 147px;
+        right: 31px;
+        background-color: aqua;
+        width: 412px;
+        height: 300px;
+        z-index: -3;
+    }
+
+    .navBar ul {
+        padding-top: 10px;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+    }
+
+    .navBar .desktop {
+        display: none;
+    }
+
+    .navBar .mobile {
+        display: flex;
+        width: 100%;
         height: 200px;
         position: absolute;
         top: 0;
