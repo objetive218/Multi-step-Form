@@ -30,17 +30,17 @@ const StepThree = ({handler, setInfo, info}) => {
             <div className={addOns.online? "box_addOns" : ""} >
                 <input  onClick={(e) => {setAddOns({...addOns, online:e.target.checked})}} type="checkbox" name="online" id="online" />
                 <h5><span>Online service</span> <br /> Access to multiplayer games</h5>
-                <p>{durationBilling === "mo" ? `$1/${durationBilling}` : `$10/${durationBilling}` }</p>
+                <p>{durationBilling === "mo" ? `+$1/${durationBilling}` : `+$10/${durationBilling}` }</p>
             </div>
             <div className={addOns.storage? "box_addOns" : ""}>
                 <input onClick={(e) => {setAddOns({...addOns, storage:e.target.checked})}} type="checkbox" name="storage" id="storage" />
                 <h5><span>Larger storage</span> <br /> Extra 1TB of cloud save</h5>
-                <p>{durationBilling === "mo" ? `$2/${durationBilling}` : `$20/${durationBilling}`}</p>
+                <p>{durationBilling === "mo" ? `+$2/${durationBilling}` : `+$20/${durationBilling}`}</p>
             </div>
             <div className={addOns.profile? "box_addOns" : ""}>
                 <input onClick={(e) => {setAddOns({...addOns, profile:e.target.checked})}} type="checkbox" name="profile" id="profile" />
                 <h5><span>Customizable Profile</span> <br /> Custom theme on your profile</h5>
-                <p>{durationBilling === "mo" ? `$2/${durationBilling}` : `$20/${durationBilling}` }</p>
+                <p>{durationBilling === "mo" ? `+$2/${durationBilling}` : `+$20/${durationBilling}` }</p>
             </div>
                 <button className="btn_back" onClick={(e) => {e.preventDefault();
                     handler('two');
