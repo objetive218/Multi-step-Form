@@ -4,8 +4,8 @@ import '../App.css'
 const Navbar = ({select}) => {
     return (
         <nav className='navBar'>
-            <img className='desktop' src="images\bg-sidebar-desktop.svg" alt="desktop" />
-            <img className='mobile' src="images\bg-sidebar-mobile.svg" alt="mobile" />
+            <img className='desktop' src="\images\bg-sidebar-desktop.svg" alt="desktop" />
+            <img className='mobile' src="/images\bg-sidebar-mobile.svg" alt="mobile" />
             <ul>
                 <li>
                     <span className={select === "one" ? 'active_back' : ""}>1</span>

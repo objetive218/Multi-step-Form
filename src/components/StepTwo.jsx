@@ -46,9 +46,9 @@ const StepTwo = ({handler, setInfo, info }) => {
             }
                 }>
                 <article>
-                <span onClick={() => getInfo("arcade")} className={selectBox === "arcade" ? 'select_box' : ""}><img src="src\assets\images\icon-arcade.svg" alt="icon arcade" /> <h4>Arcade</h4> <p>{current?"$9/mo":"$108/yr"}</p><h6>{!current?"2 months free":""}</h6></span>
-                <span onClick={() => getInfo("advanced")} className={selectBox === "advanced" ? 'select_box': ""}><img src="src\assets\images\icon-advanced.svg" alt="" /> <h4>Advanced</h4> <p>{current?"$12/mo":"$144/yr"}</p> <h6>{!current?"2 months free":""}</h6></span>
-                <span onClick={() => getInfo("pro")} className={selectBox === "pro" ? 'select_box' : ""}><img src="src\assets\images\icon-pro.svg" alt="" /> <h4>Pro</h4> <p>{current?"$15/mo":"$180/yr"}</p> <h6>{!current?"2 months free":""}</h6></span>
+                <span onClick={() => getInfo("arcade")} className={selectBox === "arcade" ? 'select_box' : ""}><img src="\images\icon-arcade.svg" alt="icon arcade" /> <h4>Arcade</h4> <p>{current?"$9/mo":"$108/yr"}</p><h6>{!current?"2 months free":""}</h6></span>
+                <span onClick={() => getInfo("advanced")} className={selectBox === "advanced" ? 'select_box': ""}><img src="\images\icon-advanced.svg" alt="" /> <h4>Advanced</h4> <p>{current?"$12/mo":"$144/yr"}</p> <h6>{!current?"2 months free":""}</h6></span>
+                <span onClick={() => getInfo("pro")} className={selectBox === "pro" ? 'select_box' : ""}><img src="\images\icon-pro.svg" alt="" /> <h4>Pro</h4> <p>{current?"$15/mo":"$180/yr"}</p> <h6>{!current?"2 months free":""}</h6></span>
                 </article>
                 <div>
                     <h5 className={current ? "" : 'active'}>Monthly</h5>
