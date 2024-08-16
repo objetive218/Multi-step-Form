@@ -12,22 +12,24 @@ const StepFour = ({handler, info}) => {
             <p>Double-check everything looks OK before confirming.</p>
             <form action="#">
             <div>
-                <h5>{`${allInfo.planName}(${billingDuration})`} <br /> <a href="#"  onClick={() => handler("two")}>Change</a></h5>
+                <h5>{`${allInfo.planName} (${billingDuration})`} <br /> <a href="#"  onClick={() => handler("two")}>Change</a></h5>
                 <p>{ `$${allInfo.plan}/${allInfo.duration}`}</p>
             </div>
-
-            {allInfo.onlineBilling ? <div>
+            <section>
+            {allInfo.onlineBilling ? <div className="medium_box">
                 <h5>{`Online service`}</h5>
-                <p>{ `$${allInfo.onlineBilling}/${allInfo.duration}`}</p>
+                <p>{ `+$${allInfo.onlineBilling}/${allInfo.duration}`}</p>
             </div> : ""}
-            {allInfo.storageBilling?<div>
-                <h5>{`Larger storage(${"duration"})`}</h5>
-                <p>{ `$${allInfo.storageBilling}/${allInfo.duration}`}</p>
+            {allInfo.storageBilling?<div className="medium_box">
+                <h5>{`Larger storage`}</h5>
+                <p>{ `+$${allInfo.storageBilling}/${allInfo.duration}`}</p>
             </div>:""}
-            {allInfo.profileBilling?<div>
-                <h5>{`Customizable profile(${"duration"})`}</h5>
-                <p>{ `$${allInfo.profileBilling}/${allInfo.duration}`}</p>
+            {allInfo.profileBilling?<div className="medium_box">
+                <h5>{`Customizable profile`}</h5>
+                <p>{ `+$${allInfo.profileBilling}/${allInfo.duration}`}</p>
             </div>:""}
+            </section>
+                
             <div>
                 <h5>{`Total (per ${billingDurationNormal})`}</h5>
                 <p>{ `$${total}/${allInfo.duration}`}</p>
