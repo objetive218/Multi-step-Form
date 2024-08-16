@@ -3,7 +3,7 @@ import '../App.css'
 
 // eslint-disable-next-line react/prop-types
 const StepTwo = ({handler, setInfo, info }) => {
-    const [current, setCurrent]= useState(false);
+    const [current, setCurrent]= useState(true);
     const [selectBox, setSelectBox]= useState("arcade")
     const getInfo = (element) => {
         switch (element) {
@@ -23,15 +23,15 @@ const StepTwo = ({handler, setInfo, info }) => {
         switch (selectBox) {
             case "arcade":
                 data = current ? 9: 108;
-                setInfo({...info,planName: "arcade",plan: data, duration: current? "mo": "yr"})
+                setInfo({...info,planName: "Arcade",plan: data, duration: current? "mo": "yr"})
                 break;
             case "advanced":
                 data = current ? 12: 144;
-                setInfo({...info,planName: "advanced",plan: data, duration: current? "mo": "yr"})
+                setInfo({...info,planName: "Advanced",plan: data, duration: current? "mo": "yr"})
                 break;
             case "pro":
                 data = current ? 15: 180;
-                setInfo({...info,planName: "pro",plan: data, duration: current? "mo": "yr"})
+                setInfo({...info,planName: "Pro",plan: data, duration: current? "mo": "yr"})
                 break;
         }
     }
@@ -46,9 +46,9 @@ const StepTwo = ({handler, setInfo, info }) => {
             }
                 }>
                 <article>
-                <span onClick={() => getInfo("arcade")} className={selectBox === "arcade" ? 'select_box' : ""}><img src="src\assets\images\icon-arcade.svg" alt="icon arcade" /> <h4>Arcade</h4> <p>{current?"$9/mo":"$108/yr"}</p></span>
-                <span onClick={() => getInfo("advanced")} className={selectBox === "advanced" ? 'select_box': ""}><img src="src\assets\images\icon-advanced.svg" alt="" /> <h4>Advanced</h4> <p>{current?"$12/mo":"$144/yr"}</p></span>
-                <span onClick={() => getInfo("pro")} className={selectBox === "pro" ? 'select_box' : ""}><img src="src\assets\images\icon-pro.svg" alt="" /> <h4>Pro</h4> <p>{current?"$15/mo":"$180/yr"}</p></span>
+                <span onClick={() => getInfo("arcade")} className={selectBox === "arcade" ? 'select_box' : ""}><img src="src\assets\images\icon-arcade.svg" alt="icon arcade" /> <h4>Arcade</h4> <p>{current?"$9/mo":"$108/yr"}</p><h6>{!current?"2 months free":""}</h6></span>
+                <span onClick={() => getInfo("advanced")} className={selectBox === "advanced" ? 'select_box': ""}><img src="src\assets\images\icon-advanced.svg" alt="" /> <h4>Advanced</h4> <p>{current?"$12/mo":"$144/yr"}</p> <h6>{!current?"2 months free":""}</h6></span>
+                <span onClick={() => getInfo("pro")} className={selectBox === "pro" ? 'select_box' : ""}><img src="src\assets\images\icon-pro.svg" alt="" /> <h4>Pro</h4> <p>{current?"$15/mo":"$180/yr"}</p> <h6>{!current?"2 months free":""}</h6></span>
                 </article>
                 <div>
                     <h5 className={current ? "" : 'active'}>Monthly</h5>
